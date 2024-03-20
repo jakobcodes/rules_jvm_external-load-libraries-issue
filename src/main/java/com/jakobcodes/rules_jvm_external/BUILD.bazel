@@ -1,0 +1,12 @@
+java_binary(
+    name = "Main",
+    srcs = glob(
+        [
+            "*.java",
+        ],
+    ),
+    deps = [
+        "@maven//:com_almworks_sqlite4java_libsqlite4java_linux_amd64",
+        "@maven//:com_almworks_sqlite4java_libsqlite4java_osx",
+    ],  # keep
+)
